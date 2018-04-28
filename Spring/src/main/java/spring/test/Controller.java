@@ -11,12 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @org.springframework.stereotype.Controller //Данный класс будет отвечать на веб запросы
 public class Controller {
-
+    @Autowired //Позволяет с помощу бина создать обэект класса 1 раз
     Semple semple ;
 
     @RequestMapping("/") //Данный метод будет обраюатывать корневой URL
     public String index(Model model) {
-        semple = new Semple();
         model.addAttribute("counter",semple.getCounter());
         model.addAttribute("constructorCounter",semple.getConstructorCounter());
         return "index";
