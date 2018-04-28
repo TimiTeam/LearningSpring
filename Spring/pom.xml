@@ -13,9 +13,20 @@
     <version>1.5.9.RELEASE</version>
 </parent>
     <dependencies>
+        <!-- creating web app-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- working with JSP-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <!-- Core JSP-->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
         </dependency>
     </dependencies>
 
